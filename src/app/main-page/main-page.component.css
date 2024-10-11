@@ -1,0 +1,101 @@
+/* .landing-background {
+    background-image: url('../../../public/assets/main_temp.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .select-button-tuya {
+    width: 250px;
+    height: 70px;
+    font-size: 18px;
+    background-color: #ff8a00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    position: fixed; 
+    right: 5%; 
+    bottom: 4.1%; 
+    background: transparent;
+  }
+  
+  .select-button-quan {
+    width: 250px;
+    height: 70px;
+    font-size: 18px;
+    background-color: #ff8a00;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    position: fixed; 
+    left: 3%; 
+    bottom: 4.1%; 
+    background: transparent;
+  }
+
+  .select-button:hover {
+    background-color: #e52e71;
+  }
+
+
+   */
+
+.landing-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.select-button-tuya,
+.select-button-quan {
+  width: 250px;
+  height: 70px;
+  font-size: 18px;
+  background-color: #ff8a00;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  z-index: 10; /* Đảm bảo button nằm trên video */
+}
+
+.select-button-tuya {
+  right: 6%;
+  bottom: 6%;
+}
+
+.select-button-quan {
+  left: 6.5%;
+  bottom: 6%;
+}
+
+.select-button:hover {
+  background-color: #e52e71;
+}

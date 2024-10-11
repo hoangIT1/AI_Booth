@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+.back-button {
+  height: 60px;
+  width: 100px;
+  font-size: 16px;
+  background-color: #e52e71;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: fixed;
+  left: 120px; /* Nút nằm ở góc trái */
+  bottom: 40px;
+}
+
+.back-button:hover {
+  background-color: #ff8a00;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-size: 18px;
+}

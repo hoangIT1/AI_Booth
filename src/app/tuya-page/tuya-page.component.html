@@ -1,0 +1,30 @@
+<div class="background">
+  <video autoplay muted loop class="background-video">
+    <source src="assets/man_hinh_AI-man2.mp4" type="video/mp4" />
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+  <div class="text-content" style="top: 23%; left: 18%">
+    {{ apiText || "Hi"}}
+  </div>
+
+  <textarea
+    class="custom-textarea"
+    [(ngModel)]="comparisonContent"
+    style="top: 62%; right: 30%"
+    (input)="updateComparisonContent($event)"
+    placeholder="Ước đi con của ta"
+  ></textarea>
+
+  <div class="send-wish">
+    <button class="custom-button" (click)="callApiBedRock()">
+    </button>
+  </div>
+
+  <button (click)="goBack()" class="back-button">
+    <img src="../../../icons/backIcon.png" alt="Back" class="back-button-image">
+  </button>
+
+  <!-- Hiển thị spinner khi API đang được gọi -->
+  <div *ngIf="isLoading" class="loading-spinner"></div>
+</div>
