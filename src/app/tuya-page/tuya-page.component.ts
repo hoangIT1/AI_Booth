@@ -37,8 +37,8 @@ export class TuyaPageComponent {
       const client = new BedrockRuntimeClient({
         region: 'ap-northeast-1',
         credentials: {
-          accessKeyId: 'xxxxxx',
-          secretAccessKey: 'xxxxx',
+          accessKeyId: 'AKIASFIXC3L2YLFXJR65',
+          secretAccessKey: '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',
           credentialScope: 'bedrock'
         }
       });

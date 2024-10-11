@@ -11,6 +11,8 @@ import { Router } from '@angular/router';
   styleUrl: './quan-page.component.css',
 })
 export class QuanPageComponent {
+  isLoading = false;
+
   buttons = [
     'CIO Office',
     'DE',
@@ -31,7 +33,11 @@ export class QuanPageComponent {
 
   navigateToPage(buttonIndex: number) {
     if (buttonIndex < 9) {
-      this.router.navigate(['/image-page', buttonIndex]);
+      this.isLoading = true;
+      setTimeout(() => {
+        this.router.navigate(['/image-page', buttonIndex]);
+        this.isLoading = false;
+      }, 20000)
       console.log(buttonIndex);
     } else {
       this.router.navigate(['/image-page-ito'])

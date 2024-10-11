@@ -28,6 +28,7 @@
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  opacity: 1;
 }
 
 .back-button-image {
@@ -56,4 +57,27 @@ button {
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
+  opacity: 0; /* Thay đổi để ẩn hiện button trong quá trình căn chỉnh layout */
+  pointer-events: all; /* Giữ tính năng tương tác */
+}
+
+.loading-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Canh giữa nội dung theo chiều ngang */
+  display: flex;
+  flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  gap: 10px; /* Khoảng cách giữa văn bản và hình GIF */
+}
+
+.loading-gif {
+  width: 80px; /* Điều chỉnh kích thước GIF nếu cần */
+  height: 80px;
 }

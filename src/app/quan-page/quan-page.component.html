@@ -12,4 +12,9 @@
       {{ button }}
     </button>
   </div>
+
+  <div *ngIf="isLoading" class="loading-message">
+    <img src="../../../icons/Hourglass.gif" alt="Loading..." class="loading-gif">
+    Ôi con ơi Bụt đang làm phép, con hãy chờ 20s nhé ...
+  </div>
 </div>
