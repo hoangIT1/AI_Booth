@@ -1,0 +1,74 @@
+.landing-background {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.back-button {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.back-button-image {
+  width: 40px;
+  height: 40px;
+}
+
+/* .image-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+} */
+
+/* .image-left,
+.image-right {
+  width: 45%;
+  height: auto;
+  border: 5px solid #d4af37;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.image-frame {
+    position: absolute;
+    top: 25%; /* Đẩy khung ảnh xuống 35% từ đầu trang */
+    left: 33%; /* Đẩy khung ảnh sang trái 10% từ lề trái */
+    display: flex;
+    justify-content: space-between;
+    width: 48%; /* Điều chỉnh kích thước khung */
+    gap: 200px;
+  }
+
+.image-left,
+.image-right {
+  max-width: 49%;
+  max-height: 85%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-right {
+    left: 10%;
+}
