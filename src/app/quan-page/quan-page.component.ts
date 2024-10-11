@@ -40,7 +40,11 @@ export class QuanPageComponent {
       }, 20000)
       console.log(buttonIndex);
     } else {
-      this.router.navigate(['/image-page-ito'])
+      this.isLoading = true;
+      setTimeout(() => {
+        this.router.navigate(['/image-page-ito'])
+        this.isLoading = false;
+      }, 20000)
     }
   }
 }
